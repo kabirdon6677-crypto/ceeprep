@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import Image from 'next/image'
 import { createClient } from '../lib/supabase'
 import Link from 'next/link'
 import { getAnonId } from '../lib/anonId'
@@ -235,7 +236,7 @@ export default function NewsPage() {
                 </div>
                 <p className="text-gray-200 text-sm mb-2">{post.content}</p>
                 {post.image_url && (
-                  <img src={post.image_url} alt="" className="rounded-lg max-h-80 w-auto mb-2" />
+                  <Image src={post.image_url} alt="" width={500} height={400} className="rounded-lg max-h-80 w-auto mb-2" />
                 )}
                 <div className="flex items-center gap-3 mt-1">
                   <button

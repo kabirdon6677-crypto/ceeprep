@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import Image from 'next/image'
 import { createClient } from '../lib/supabase'
 import Link from 'next/link'
 
@@ -181,7 +182,7 @@ export default function AdminPage() {
               <p className="mb-2">{n.content}</p>
 
               {n.image_url && (
-                <img src={n.image_url} className="rounded mb-2 max-h-60" />
+                <Image src={n.image_url} alt="" width={400} height={300} className="rounded mb-2 max-h-60" />
               )}
 
               <p className="text-xs text-gray-500 mb-2">Status: {n.status}</p>
