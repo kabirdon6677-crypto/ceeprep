@@ -33,13 +33,43 @@ export default function Home() {
         <div className="absolute top-1/3 -right-24 w-72 h-72 bg-blue-500/15 rounded-full blur-3xl animate-glow-slow"></div>
       </div>
 
-      <header className="relative z-10 flex items-center justify-center px-6 py-4 bg-[#2b2d31]/80 backdrop-blur-sm border-b border-black/30">
+      <header className="relative z-10 flex items-center justify-between px-6 py-4 bg-[#2b2d31]/80 backdrop-blur-sm border-b border-black/30">
         <div className="flex items-center gap-1.5">
           <span className="text-2xl font-extrabold tracking-tight">
             <span className="text-indigo-400">CEE</span>
             <span className="text-gray-300">prep</span>
           </span>
           <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse mt-1"></span>
+        </div>
+
+        <div className="flex flex-wrap justify-center gap-5 text-sm">
+          <Link
+            href="/about"
+            className="text-gray-400 hover:text-indigo-400 transition"
+          >
+            About
+          </Link>
+
+          <Link
+            href="/privacy"
+            className="text-gray-400 hover:text-indigo-400 transition"
+          >
+            Privacy Policy
+          </Link>
+
+          <Link
+            href="/terms"
+            className="text-gray-400 hover:text-indigo-400 transition"
+          >
+            Terms & Conditions
+          </Link>
+
+          <Link
+            href="/contact"
+            className="text-gray-400 hover:text-indigo-400 transition"
+          >
+            Contact
+          </Link>
         </div>
       </header>
 

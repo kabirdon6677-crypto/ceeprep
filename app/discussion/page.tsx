@@ -276,9 +276,6 @@ export default function DiscussionPage() {
             })}
           </div>
 
-          <div className="mt-8 border border-dashed border-gray-600 rounded-lg p-6 text-center text-xs text-gray-500">
-            Ad space (728×90)
-          </div>
         </main>
       </div>
     </div>

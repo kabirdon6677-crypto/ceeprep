@@ -114,7 +114,7 @@ export default function AdminPage() {
           onSubmit={handlePasswordSubmit}
           className="bg-[#2b2d31] rounded-xl p-8 w-full max-w-sm"
         >
-          <h1 className="text-white text-xl font-bold mb-4 text-center">Admin Access</h1>
+          <h1 className="text-white text-xl font-bold mb-4 text-center">Admins Access</h1>
           <input
             type="password"
             value={passwordInput}
