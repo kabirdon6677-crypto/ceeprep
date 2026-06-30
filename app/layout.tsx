@@ -33,6 +33,9 @@ export const metadata: Metadata = {
   authors: [{ name: "Yujal Dhital" }],
   creator: "Yujal Dhital",
   metadataBase: new URL("https://yujal1.com.np"),
+  other: {
+    "google-adsense-account": "ca-pub-3889373197554287",
+  },
 };
 
 export default function RootLayout({
